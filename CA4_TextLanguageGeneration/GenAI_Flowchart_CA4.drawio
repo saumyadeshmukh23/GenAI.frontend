@@ -1,0 +1,55 @@
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.0.0 Safari/537.36" version="24.7.7">
+  <diagram name="Page-1" id="Agj-WzSo00h-UkhBlXKr">
+    <mxGraphModel dx="1050" dy="529" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="Hnmb3VRct1zpT710P046-3" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="Hnmb3VRct1zpT710P046-1" target="Hnmb3VRct1zpT710P046-2">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Hnmb3VRct1zpT710P046-1" value="&lt;b&gt;Start&lt;br&gt;(Input Document)&lt;/b&gt;" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="350" y="40" width="120" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="Hnmb3VRct1zpT710P046-5" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="Hnmb3VRct1zpT710P046-2" target="Hnmb3VRct1zpT710P046-4">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Hnmb3VRct1zpT710P046-2" value="&lt;b&gt;Tokenization&lt;/b&gt;&lt;br&gt;(Split the document into sentences and words)" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="320" y="160" width="180" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="Hnmb3VRct1zpT710P046-7" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="Hnmb3VRct1zpT710P046-4" target="Hnmb3VRct1zpT710P046-6">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Hnmb3VRct1zpT710P046-4" value="&lt;b&gt;Named Entity Recognition (NER) for Names and Places&lt;br&gt;&lt;/b&gt;Use spaCy to extract names (&lt;code&gt;PERSON&lt;/code&gt;) and places (&lt;code&gt;GPE&lt;/code&gt;, &lt;code&gt;LOC&lt;/code&gt;).&lt;b&gt;&lt;/b&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="300" y="260" width="220" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="Hnmb3VRct1zpT710P046-9" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="Hnmb3VRct1zpT710P046-6" target="Hnmb3VRct1zpT710P046-8">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Hnmb3VRct1zpT710P046-6" value="&lt;b&gt;Date extraction using Regex&lt;/b&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="335" y="350" width="150" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="Hnmb3VRct1zpT710P046-11" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="Hnmb3VRct1zpT710P046-8" target="Hnmb3VRct1zpT710P046-10">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Hnmb3VRct1zpT710P046-8" value="&lt;b&gt;Store Entities in Lists&lt;br&gt;&lt;/b&gt;Store the extracted names, dates, and places into separate lists.&lt;b&gt;&lt;/b&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="270" y="440" width="280" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="Hnmb3VRct1zpT710P046-13" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="Hnmb3VRct1zpT710P046-10" target="Hnmb3VRct1zpT710P046-12">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Hnmb3VRct1zpT710P046-10" value="&lt;b&gt;Remove Duplicates&lt;br&gt;&lt;/b&gt;Ensure each list contains unique entities by removing duplicates.&lt;b&gt;&lt;/b&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="300" y="530" width="220" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="Hnmb3VRct1zpT710P046-15" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="Hnmb3VRct1zpT710P046-12" target="Hnmb3VRct1zpT710P046-14">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Hnmb3VRct1zpT710P046-12" value="&lt;b&gt;Return Dictionary&lt;br&gt;&lt;/b&gt;Organize the extracted data into a dictionary with keys: &quot;Names&quot;, &quot;Dates&quot;, &quot;Places&quot;&lt;b&gt;&lt;/b&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="300" y="630" width="220" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="Hnmb3VRct1zpT710P046-14" value="&lt;b&gt;End&lt;/b&gt;" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="350" y="730" width="120" height="80" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
